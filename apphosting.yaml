@@ -1,0 +1,15 @@
+runConfig:
+  cpu: 1
+  memoryMiB: 512
+  concurrency: 80
+  minInstances: 1
+  maxInstances: 2
+
+outputFiles:
+  serverApp:
+    include:
+      - .next
+      - node_modules
+      - package.json
+      - pnpm-lock.yaml
+      - public
